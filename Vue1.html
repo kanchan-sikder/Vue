@@ -10,11 +10,14 @@
 </head>
 <body>
     <div id="main">
-        <h1>{{greet('mrning')}}</h1>
-        <a v-bind:href="website">Link for data binding</a>
-        <input type="type" v-bind:value="job">
-        <p v-html="webtag"></p>
-        <p>Name : {{name}}</p>
+        <h1>Conditionals</h1>
+        <button v-on:click="error =!error">Toggle error</button>
+        <button v-on:click="success =!success">Toggle success</button>
+        <!-- <p v-if="error">We Got an error</p>
+        <p v-else-if="success">We Got Success</p> -->
+        <p v-show="error">We Got an error</p>
+        <p v-show="success">We Got Success</p>
+        <!-- This changes the style tag -->
     </div>
     <script src="./app.js"></script>
 </body>
