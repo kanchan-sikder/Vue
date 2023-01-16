@@ -10,11 +10,13 @@
 </head>
 <body>
     <div id="main">
-        <h1>{{greet('mrning')}}</h1>
-        <a v-bind:href="website">Link for data binding</a>
-        <input type="type" v-bind:value="job">
-        <p v-html="webtag"></p>
-        <p>Name : {{name}}</p>
+        <h1>A Form</h1>
+        <p>A:{{a}}</p>
+        <button v-on:click = "a++">Add A</button>
+        <p>B:{{b}}</p>
+        <button v-on:click = "b++">Add B</button>
+        <p>Age :{{AddA}}</p>
+        <p>Age :{{AddB}}</p>
     </div>
     <script src="./app.js"></script>
 </body>
