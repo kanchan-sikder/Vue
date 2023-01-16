@@ -2,13 +2,20 @@ new Vue({
     el:'#main',
     data:{
         name: 'Kanchan',
-        job: 'Student',
-        website:'https://www.google.com',
-        webtag:'<a href="https://www.google.com">Link for html to render</a>'
+        age:13,
+        x:0,
+        y:0
     },
     methods :{
-        greet: function(time){
-            return ('Good '+ time+' '+this.name);
+        add: function(inc){
+            this.age+=inc;
+        },
+        sub: function(dec){
+            this.age-=dec;
+        },
+        updateXY: function(event){
+            this.x= event.offsetX;
+            this.y= event.offsetY;
         }
     }
 });
